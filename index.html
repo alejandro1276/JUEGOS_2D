@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>CASINO 1972</title>
+<link rel="stylesheet" href="estilos.css">
 <style>
 #miCanvas{   border:solid 3px rgb(250, 3, 3);
     background:rgb(7, 0, 0);   }
@@ -172,8 +173,16 @@ window.onload = function(){
 </script>
 </head>
 <body>
-    <a style="color: red;"href="juegos.html">    JUGAR AHORA</a>	
-
+    
+    <header>
+        <nav class="menu">
+            <ul>
+            
+                <li><a href="menu/juegos.html" id="selected">PLAY</a></li> 
+                <li><a href="menu/presentacion.HTML" id="selected">Presentacion</a></li> 
+            </ul>
+        </nav>
+    </header>
 
 
 <canvas id="miCanvas" width="1400px" height="600px">
