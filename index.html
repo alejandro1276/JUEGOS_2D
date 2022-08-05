@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CASINO 1972</title>
+<style>
+#miCanvas{   border:solid 3px rgb(250, 3, 3);
+    background:rgb(7, 0, 0);   }
+</style>
+<script>
+window.onload = function(){
+    var canvas = document.getElementById("miCanvas");
+    if(canvas && canvas.getContext){
+        var ctx = canvas.getContext("2d");
+        if(ctx){
+
+
+            var txt =document.querySelector("canvas").getContext("2d");
+            txt.font="100px capitan america";
+            txt.fillStyle ="WHITE";
+            txt.fillText("CASINO 1972",  50,90);
+            txt.fillStyle ="RED";
+            txt.fillText("MEMORY",  700,90);
+            txt.fillStyle ="white";
+            txt.font="40px capitan america";
+            txt.fillText("®alejandro monroy",  900,520);
+
+            //Descripcion de lineas
+            //letra m
+            ctx.lineWidth = 5;
+            ctx.strokeStyle = "blue ";
+            ctx.beginPath();
+            ctx.arc(100,200,50,1.0*Math.PI, 2.1*Math.PI);
+            ctx.stroke();
+            ctx.fillStyle = "blue";
+            ctx.fillRect(45,140,5,90);
+            ctx.lineWidth = 5;
+            ctx.strokeStyle = "blue ";
+            ctx.beginPath();
+            ctx.arc(200,200,50,1.*Math.PI, 2.2*Math.PI);
+            ctx.stroke();
+
+            //LETRA O
+            ctx.lineWidth = 5;
+            ctx.strokeStyle = "blue ";
+            ctx.beginPath();
+            ctx.arc(320,200,50,1.1*Math.PI, 3.1416*Math.PI);
+            ctx.stroke();
+
+            //letra n
+            ctx.lineWidth = 5;
+            ctx.strokeStyle = "blue ";
+            ctx.beginPath();
+            ctx.arc(450,200,50,1.0*Math.PI, 1.8*Math.PI);
+            ctx.stroke();
+            ctx.fillStyle = "blue";
+            ctx.fillRect(398,140,5,100);
+            ctx.fillStyle = "blue";
+            ctx.fillRect(488,165,5,75);
+            
+            // letra R
+            ctx.fillStyle = "blue";
+            ctx.fillRect(515,140,5,100);
+            ctx.lineWidth = 5;
+            ctx.strokeStyle = "blue ";
+            ctx.beginPath();
+            ctx.arc(570,190,50,1.0*Math.PI, 1.8*Math.PI);
+            ctx.stroke();
+
+
+
+
+            //LETRA O
+            ctx.lineWidth = 5;
+            ctx.strokeStyle = "blue ";
+            ctx.beginPath();
+            ctx.arc(680,200,50,1.1*Math.PI, 3.1416*Math.PI);
+            ctx.stroke();
+
+            //LETRA Y
+
+            ctx.lineWidth = 5;
+            ctx.strokeStyle = "blue ";
+            ctx.beginPath();
+            ctx.arc(800,133,50,2.1*Math.PI, 0.9*Math.PI);
+            ctx.stroke();
+            ctx.fillStyle = "blue";
+            ctx.fillRect(800,180,5,75);
+            
+			// letra l
+
+
+            ctx.fillStyle = "blue";
+            ctx.fillRect(50,340,5,100);
+            ctx.moveTo(50,100);
+            ctx.lineWidth = 5;
+            ctx.beginPath();
+            ctx.beginPath();
+            ctx.lineCap = "butt";
+            ctx.moveTo(50,443);
+            ctx.lineTo(110,443);
+            ctx.stroke();
+
+            //LETRA U
+            ctx.fillStyle = "blue";
+            ctx.fillRect(200,340,5,100);
+            ctx.moveTo(50,100);
+            ctx.lineWidth = 5;
+            ctx.beginPath();
+            ctx.lineCap = "butt";
+            ctx.moveTo(150,444);
+            ctx.lineTo(200,444);
+            ctx.stroke();
+            ctx.fillStyle = "blue";
+            ctx.fillRect(150,340,5,100);
+
+            // LETR i
+            ctx.fillStyle = "blue";
+            ctx.fillRect(250,344,5,100)
+            //punto
+             //punto  O
+             ctx.lineWidth = 5;
+            ctx.strokeStyle = "blue ";
+            ctx.beginPath();
+            ctx.arc(252,324,5,1.1*Math.PI, 3.1416*Math.PI);
+            ctx.stroke()
+
+//lineas s arriba- abajo
+            ctx.fillStyle = "blue";
+            ctx.fillRect(300,340,5,50);
+            ctx.fillRect(350,400,5,50);
+            ctx.moveTo(50,100);
+            ctx.lineWidth = 5;
+            ctx.beginPath();
+
+            ctx.beginPath();
+            ctx.moveTo(352,345);
+            ctx.lineTo(300,345);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(352,395);
+            ctx.lineTo(300,395);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(352,449);
+            ctx.lineTo(300,449);
+            ctx.stroke();
+
+            
+			} else {
+            alert("Error al crear tu contexto");    
+        }
+    }
+		
+	
+	           var imagen = new Image();
+            //
+            function procesaImagen(){
+                ctx.drawImage(imagen,900,100);         
+            }
+            //
+            imagen.src = "monroy.jpg";
+            imagen.onload = function(e){
+                procesaImagen();
+                
+            }
+	
+	
+}
+</script>
+</head>
+<body>
+    <a style="color: red;"href="juegos.html">    JUGAR AHORA</a>	
+
+
+
+<canvas id="miCanvas" width="1400px" height="600px">
+Tu navegador no soporta CANVAS
+</canvas>
+</body>
+</html>
