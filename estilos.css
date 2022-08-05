@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial,Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background: #080000;
+}
+
+.menu{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    perspective: 200px;
+}
+
+.menu ul{
+    display: flex;
+    margin: auto;
+}
+
+.menu li{
+    list-style: none;
+    padding: 15px 20px;
+}
+
+.menu li:hover{
+    background: rgb(241, 3, 3);
+    color: white;
+    cursor: pointer;
+    transition: all 300ms;    
+}
